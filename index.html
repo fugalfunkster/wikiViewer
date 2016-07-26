@@ -1,0 +1,33 @@
+<head>
+  <link rel="stylesheet" type="text/css" href="index.css" />
+</head>
+<body>
+
+<div class="searchDIV">
+  <h1>Search Wikipedia!</h1>
+  <div class="ui-widget">
+    <form id="searchForm">
+      <input id="inputField" type="text" maxlength="90" />
+      <ul id="stickIt"></ul>
+    </form>
+  </div>
+  <button id="random">Or, see a random Wiki Entry!</button>
+</div>
+
+<div class="dangling"></div>
+
+  <script   src="https://code.jquery.com/jquery-3.1.0.min.js"   integrity="sha256-cCueBR6CsyA4/9szpPfrX3s49M9vUU5BgtiJj06wt/s="   crossorigin="anonymous"></script>
+  <script type="text/javascript" src="index.js"></script>
+
+<script id="entry-template" type="text/x-handlebars-template">
+  <div class="article">
+    <a class="active" href={{link}} target="_blank">
+      <div class="inner">
+        <p class="title">{{title}}</p>
+        <p class="snippet">{{{text}}}</p>
+      </div>
+    </a>
+  </div>
+</script>
+
+</body> 
